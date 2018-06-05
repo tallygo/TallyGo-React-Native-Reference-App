@@ -1,0 +1,20 @@
+PODS:
+  - Mapbox-iOS-SDK (3.7.8)
+  - TallyGoKit (2.0.3):
+    - Mapbox-iOS-SDK (< 3.8, >= 3.6.4, ~> 3.0)
+
+DEPENDENCIES:
+  - TallyGoKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Mapbox-iOS-SDK
+    - TallyGoKit
+
+SPEC CHECKSUMS:
+  Mapbox-iOS-SDK: a8b55533ef5c5e91b5a26533bd4fb0ec88a3b994
+  TallyGoKit: 76f55e101b6baee054021c0d5e1c0242a2191b2c
+
+PODFILE CHECKSUM: 2e7b241cb869a1cae4436e62e4feb3eff721feee
+
+COCOAPODS: 1.5.0

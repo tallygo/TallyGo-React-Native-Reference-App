@@ -10,10 +10,16 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
+@import TallyGoKit;
+
+NSString *const kAccessToken = @"YOUR_SDK_ACCESS_TOKEN";
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [self setupTallyGo];
+  
   NSURL *jsCodeLocation;
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
@@ -30,6 +36,14 @@
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;
+}
+
+- (void)setupTallyGo {
+  if ([kAccessToken isEqualToString:@"YOUR_SDK_ACCESS_TOKEN"]) {
+    @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:@"You need to set your access token in AppDelegate.m!" userInfo:nil];
+  }
+  
+  [TallyGo initializeWithAccessToken:kAccessToken];
 }
 
 @end

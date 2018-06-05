@@ -3,19 +3,17 @@ import { AppRegistry, SectionList, StyleSheet, Text, View } from 'react-native';
 
 // export default class MainMenu extends Component {
 export default class MainMenuScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Examples (React Native)',
+  };
+  
   goToExample = (index, section) => {
-    var offset;
-    if (section.key == 'nav') {
-      offset = 1;
-    } else if (section.key == 'ui') {
-      offset = 3;
-    } else if (section.key == 'data') {
-      offset = 10;
-    } else if (section.key == 'report') {
-      offset = 13;
+    let indexMap = {
+      0: 1,
+      1: 2,
+      2: 4,
     }
-    
-    this.props.navigation.navigate('Example' + String(index + offset));
+    this.props.navigation.navigate('Example' + String(indexMap[index]));
   };
   
   render() {
@@ -24,47 +22,13 @@ export default class MainMenuScreen extends React.Component {
         <SectionList
           sections={[
             {
-              title: 'Get Navigation In Your App',
-              key: 'nav',
+              title: 'Examples',
               data: [
                 '1. Get Navigation (with Preview)',
                 '2. Get Navigation (without Preview)',
-              ]
-            },
-            {
-              title: 'UI Examples',
-              key: 'ui',
-              data: [
-                '3. Map, search, and navigation w/ TGMapViewController',
-                '4. Basic Map w/ TGMapView (Storyboard)',
-                '5. Basic Map w/ TGMapView (no Storyboard)',
-                '6. Displaying markers on TGMapView',
-                '7. Search UI',
-                '8. Overview UI',
-                '9. Turn List UI',
-              ]
-            },
-            {
-              title: 'Data Examples',
-              key: 'data',
-              data: [
-                '10. Get lat/long pair from street address',
-                '11. Get detailed location information from lat/long pair',
-                '12. Get turn-by-turn navigation route data',
-              ]
-            },
-            {
-              title: 'Reporting Examples',
-              key: 'report',
-              data: [
-                '13. Report Driver\'s Current Location to Server',
-                '14. Report Driver\'s ETA to Server',
-                '15. Report Driver\'s Route Segment to Server',
-                '16. Display Driver\'s Reported Location from Server',
-                '17. Report Driver Motion to Server',
-                '18. Display Driver Motion from Server',
-              ]
-            },
+                '4. Basic Map w/ TGMapView',
+              ],
+            }
           ]}
           renderItem={({item, index, section}) => <Text style={styles.item} onPress={() => this.goToExample(index, section)}>{item}</Text>}
           renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}
