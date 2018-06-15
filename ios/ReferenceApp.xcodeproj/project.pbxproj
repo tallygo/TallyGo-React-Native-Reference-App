@@ -42,7 +42,6 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		CD69F3A720C860D10032C0BE /* REFMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD69F3A620C860D10032C0BE /* REFMapManager.m */; };
 		CDC0863D20C734DF00D9E835 /* TallyGoNativeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC0861620C734DE00D9E835 /* TallyGoNativeBridge.m */; };
 /* End PBXBuildFile section */
 
@@ -357,8 +356,6 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		C5BF3860391B13575C1744B6 /* Pods-ReferenceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApp/Pods-ReferenceApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CD5C1E3E35DC216CB9B1A227 /* Pods-ReferenceAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceAppTests/Pods-ReferenceAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		CD69F3A520C860D10032C0BE /* REFMapManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = REFMapManager.h; path = ReferenceApp/REFMapManager.h; sourceTree = "<group>"; };
-		CD69F3A620C860D10032C0BE /* REFMapManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = REFMapManager.m; path = ReferenceApp/REFMapManager.m; sourceTree = "<group>"; };
 		CDC0861620C734DE00D9E835 /* TallyGoNativeBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; name = TallyGoNativeBridge.m; path = ReferenceApp/TallyGoNativeBridge.m; sourceTree = "<group>"; tabWidth = 4; };
 		CDC0863C20C734DF00D9E835 /* TallyGoNativeBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TallyGoNativeBridge.h; path = ReferenceApp/TallyGoNativeBridge.h; sourceTree = "<group>"; };
 		CE47317361F27C6935423F5C /* Pods-ReferenceApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApp-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApp-tvOS/Pods-ReferenceApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -513,8 +510,6 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				CDC0863C20C734DF00D9E835 /* TallyGoNativeBridge.h */,
 				CDC0861620C734DE00D9E835 /* TallyGoNativeBridge.m */,
-				CD69F3A520C860D10032C0BE /* REFMapManager.h */,
-				CD69F3A620C860D10032C0BE /* REFMapManager.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
@@ -1263,7 +1258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD69F3A720C860D10032C0BE /* REFMapManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				CDC0863D20C734DF00D9E835 /* TallyGoNativeBridge.m in Sources */,

@@ -11,7 +11,6 @@ export default class MainMenuScreen extends React.Component {
     let indexMap = {
       0: 1,
       1: 2,
-      2: 4,
     }
     this.props.navigation.navigate('Example' + String(indexMap[index]));
   };
@@ -26,7 +25,6 @@ export default class MainMenuScreen extends React.Component {
               data: [
                 '1. Get Navigation (with Preview)',
                 '2. Get Navigation (without Preview)',
-                '4. Basic Map w/ TGMapView',
               ],
             }
           ]}
