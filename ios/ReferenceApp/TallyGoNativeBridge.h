@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <React/RCTBridgeModule.h>
 
-@import TallyGoKit;
+#import <TallyGoKit/TallyGoKit.h>
 @import MapKit;
 
 @interface TallyGoNativeBridge : NSObject <RCTBridgeModule>

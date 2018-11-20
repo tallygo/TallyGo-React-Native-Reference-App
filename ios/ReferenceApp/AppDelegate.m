@@ -10,7 +10,7 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
-@import TallyGoKit;
+#import <TallyGoKit/TallyGoKit.h>
 
 NSString *const kAccessToken = @"YOUR_SDK_ACCESS_TOKEN";
 

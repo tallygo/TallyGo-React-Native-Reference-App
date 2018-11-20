@@ -25,7 +25,8 @@ RCT_EXPORT_METHOD(runExample1) {
 }
 
 - (void)getNavWithPreview {
-    TallyGo.simulatedCoordinate = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
+    TGDrivingSimulator.sharedDrivingSimulator.startingCoordinate = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
+    TGDrivingSimulator.sharedDrivingSimulator.enabled = YES;
     
     // Get these coordinates from your app, these are just a sample
     CLLocationCoordinate2D origin = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
@@ -54,7 +55,8 @@ RCT_EXPORT_METHOD(runExample2) {
 }
 
 - (void)getNavWithoutPreview {
-    TallyGo.simulatedCoordinate = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
+    TGDrivingSimulator.sharedDrivingSimulator.startingCoordinate = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
+    TGDrivingSimulator.sharedDrivingSimulator.enabled = YES;
     
     // Get these coordinates from your app, these are just a sample
     CLLocationCoordinate2D origin = CLLocationCoordinate2DMake(34.101558, -118.340944); // Grauman's Chinese Theatre
